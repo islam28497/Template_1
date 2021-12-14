@@ -1,0 +1,81 @@
+/* 3.7 PRICING SECTION....................................................................................... */
+.pricing {
+    background-color: #e8e8e8;
+}
+.pricing-plans{
+    overflow: hidden;
+}
+.pricing-item{
+    float: left;
+    width:30%;
+    padding:30px 15px;
+    border: 1px solid #a8a8a8;
+    text-align: center;
+}
+.pricing-item-text {
+    text-transform: uppercase;
+    font-size: 17px;
+    color:#999;
+}
+.pricing-item-permonth{
+    width: 100px;
+    height: 100px;
+   padding:12px 0;
+    margin: 20px auto;
+    border: 2px solid #6195ff;
+    border-radius: 50%;
+}
+.doller{
+    font-size: 50px;
+}
+.month{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 15px;
+}
+.pricing-list{
+    list-style: none;
+
+}
+.pricing-item-purchase{
+    border: 2px solid #6195ff;
+    margin: auto;
+    padding:4px;
+    background-color: none;
+    display: block;
+    width: 120px;
+    margin-top: 15px;
+    transition: color .5s;
+}
+.pricing-item.mg{
+    margin: 0 5%;
+}
+.pricing-list li{
+    color:#999;
+    line-height: 1.8;
+}
+.pricing-item{
+    position: relative;
+}
+.pricing-item:after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0 ;
+    top: 0;
+    left: 0;
+    background-color: #0b0c0c;
+    transition: .5s;
+    opacity:.5;
+}
+.pricing-item:hover:after{
+    width: 100%;
+    height: 100%;
+}
+.pricing-item:hover .pricing-item-text{
+    color: rgb(236, 11, 11);
+}
+.pricing-item:hover .pricing-item-permonth{
+    color: rgb(245, 12, 12);
+    transition: 1s;
+}

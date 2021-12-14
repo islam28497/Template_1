@@ -1,0 +1,29 @@
+/* 3.6 NUMBERS SECTION......................................................................................... */
+.numbers {
+    position: relative;
+    background-image: url(../images/eee.jpeg);
+    height:350px;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.numbers-items{
+    overflow:hidden;
+    padding-top: 130px;
+}
+.number-item {
+    width: 25%;
+    float: left;
+    text-align:center;
+}
+.number-item .icon{
+    color:#6195ff;
+    margin-bottom: 15px;
+}
+.number-item-title{
+    font-weight: bold;
+    font-size: 30px;
+    color: #fff;
+}
+.number-item-text {
+    color: #fff;
+}

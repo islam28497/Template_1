@@ -4,22 +4,17 @@
       3.0  HEADER
       3.1  HOME SECTION 
       3.2  ABOUT SECTION 
-      3.3  PORTFOILIO SECTION 
-      3.4  SERVICE SECTION 
-      3.5  PRICES SECTION 
-      3.6  TEAM SECTION 
-      3.7  BLOG SECTION 
-      3.8  CONTACT SECTION 
-      3.9  FOOTER SECTION
+      3.3  PORTFOLIO SECTION .
+      3.4  OFFER SECTION .
+      3.5  SERVICE SECTION .
+      3.6  NUMBERS SECTION .
+      3.7  PRICING SECTION .
+      3.8  TESTIMONIAL SECTION .
+      3.9  TEAM SECTION 
+      3.10 BLOG SECTION 
+      3.11 FOOTER SECTION
  */
-/* 1- COMMON STYLES..................................................................................
-- container
-- hover opacity
-- section header
-- section padding 
-- hover effect 1 (left to right)
-- hover effect 2 (top to bottom)
- */
+/* 1- COMMON STYLES.......................................................................................... */
  .overlay {
     position: absolute;
     width: 100%;
@@ -51,11 +46,9 @@
     height: 100%;
     transition: .5s;
     z-index: -1;
-}
-
-
- /* 2- GENERAL STYLES..................................................................................... */
- body {
+     }
+/* 2- GENERAL STYLES........................................................................................ */
+     body {
      font-family: 'varela round' , sans-serif;
     }
  *  {
@@ -71,15 +64,13 @@
         text-decoration: none;
      }
      .section-header {
-         text-align: center;
-         
+         text-align: center;   
      }
      .section-header .section-title{
          font-size: 35px;
          text-transform: capitalize;
          margin-bottom: 9px;
          margin-top: 6px;
-         /* padding-top: 70px; */
      }
      .section-header .line{
          display: block;
@@ -88,13 +79,13 @@
          background-color: royalblue;
         margin: 0  auto  70px  auto;
      }
-     /* 3- SECTIONS...................................................................................... */
-     /* 3.0 HEADER....................................................................................... */
+/* 3- SECTIONS.............................................................................................. */
+/* 3.0 HEADER................................................................................................ */
      .header {
-         /* background: grey; */
          width:100%;
          position: fixed;
          z-index: 10;
+         background-color: rgba(0, 0, 0, .5);
      }
      .header .logo {
          width:40%;
@@ -105,7 +96,6 @@
          float: left;
          text-align: right;
      }
-     /* .header-content{ */
      .clear{
          clear: both;
      }
@@ -116,11 +106,7 @@
      .header .container .header-content .nav > li > a{
          color: red;
          padding:12px;
-         /* انا هنا وسعت مساحة الأاا مش الأل أى علشان يوسع مساحة المنطقه الكليكابول */
          display: block;
-         /* عملته بلوك علشان يتوسطن علشان ياخد مساحته كامله جوا الديفايه كبلوك ومحتاجش اوسطنه */
-         /* مفيش مشكله انه يبقى بلوك لان الأااا بقا بلوك جوا الأل أى اللى اصلا هى انلاين بلوك ف مش فارقه */
-         /* ومش فارقه لأنى هوسطن واحده أأأ بس مش اكتر من واحده لو اكتر من واحده كانو هيجو فوق بعض */
      }
      .header .container .header-content .nav > li > a:after ,
      .header .container .header-content .nav  > li > a.active:after{
@@ -161,9 +147,10 @@
              visibility: visible;
              opacity:1;
          }
+/* 3.1 HOME SECTION......................................................................................... */
          .home {
              height:100vh;
-             background-image:url(images/ddd.jpg);
+             background-image:url(../images/ddd.jpg);
              background-position: cover;
              position: relative;
          }
@@ -202,12 +189,11 @@
             background-color: blue;
             color: cornsilk;
          }
-         /* ........................................................................................... */
+/* 3.2 ABOUT SECTION......................................................................................... */
          .pd-y {
              padding:120px 0;
          }
          .about-content{
-             /* background-color: red; */
              text-align: center;
              height: 350px;
              overflow: hidden;
@@ -245,267 +231,7 @@
              color: #fff;
              transition: color 1s;
          }
-         /* ...............PORTFOLIO SECTION.......................................................... */
-         .portfolio {
-             background-color: #e8e8e8;
-         }
-         .portfolio-content {
-             overflow: hidden;
-         }
-         .portfolio-item{
-             width: 30%;
-             float: left;
-             margin-bottom: 20px;
-             position: relative;
-             padding:20px;
-         }
-         .portfolio-item img{
-             width: 100%;
-         }
-         .portfolio-item.mg {
-             margin: 0 5%;
-         }
-         .portfolio-item .layer-content{
-             position: absolute;
-             top:0;
-             left:0;
-             bottom: 0;
-             right: 0;
-             width:100%;
-             height:100%;
-             text-align: center;
-             background-color: rgba(0,0,0,0.7);
-             opacity: 0;
-             visibility: hidden;
-             transition:opacity 1s;
-         }
-         .portfolio-item:hover .layer-content{
-             opacity:1;
-             visibility: visible;
-         }
-          .layer-content .layer-info{
-             position: absolute;
-             /* background-color: royalblue; */
-             left:50%;
-             top:50%;
-             width: 80%;
-            transform: translate(-50%,-50%);
-            text-align: center;
-         }
-         .layer-content .category {
-             color: #6195ff;
-             text-transform: uppercase;
-             display: block;
-             margin-bottom: 5px;
-             position: relative;
-             top: 15px;
-             opacity: 0;
-             visibility: hidden;
-             transition: top 1s ,opacity .5s;
-             transition-delay: 0;
-         }
-         .layer-content-title{
-             font-size: 20px;
-             color: #fff;
-             margin-bottom: 10px;
-             position: relative;
-             top: 15px;
-             opacity: 0;
-             visibility: hidden;
-             transition: top 1s ,opacity .5s;
-             transition-delay: .4s;
-             /* دوووووووووول  اخر 2 بس علشان عاوز لما اعمل هوفر يظهروا من تحت  */
-         }
-         .layer-content a  {
-             display: inline-block;
-             width:40px;
-             height: 40px;
-             background-color: #6195ff;
-             /* line-height: 40px; */
-             position: relative;
-             top:15px;
-             opacity: 0;
-             visibility: hidden;
-             transition: top 1s ,opacity .5s;
-             transition-delay: .6s;
-             /* دوووووووووول علشان عاوز لما اعمل هوفر يظهروا من تحت  */
-         }
-         .portfolio-item:hover .layer-content-title,
-         .portfolio-item:hover .layer-content a,
-         .portfolio-item:hover .layer-content .category{
-            top:0;
-            opacity: 1;
-            visibility: visible;
-         }
-         .layer-content a i{
-             line-height: 40px;
-         }
-        
-        
-        /* ...............................numbers................................................ */
-        .numbers {
-            position: relative;
-            background-image: url(images/eee.jpeg);
-            height:350px;
-            background-size: cover;
-            background-attachment: fixed;
-        }
-        .numbers-items{
-            overflow:hidden;
-            padding-top: 130px;
-        }
-        .number-item {
-            width: 25%;
-            float: left;
-            text-align:center;
-        }
-        .number-item .icon{
-            color:#6195ff;
-            margin-bottom: 15px;
-
-        }
-        .number-item-title{
-            font-weight: bold;
-            font-size: 30px;
-            color: #fff;
-        }
-        .number-item-text {
-            color: #fff;
-        }
-        /* ..............................pricing sector........................................ */
-        .pricing {
-            background-color: #e8e8e8;
-
-        }
-        .pricing-plans{
-            overflow: hidden;
-        }
-        .pricing-item{
-            float: left;
-            width:30%;
-            padding:30px 15px;
-            border: 1px solid #a8a8a8;
-            text-align: center;
-        }
-        .pricing-item-text {
-            text-transform: uppercase;
-            font-size: 17px;
-            color:#999;
-        }
-        .pricing-item-permonth{
-            width: 100px;
-            height: 100px;
-           padding:12px 0;
-            margin: 20px auto;
-            border: 2px solid #6195ff;
-            border-radius: 50%;
-
-        }
-        .doller{
-            font-size: 50px;
-            
-        }
-        .month{
-            text-transform: uppercase;
-            font-weight: bold;
-            font-size: 15px;
-        }
-        .pricing-list{
-            list-style: none;
-
-        }
-        .pricing-item-purchase{
-            border: 2px solid #6195ff;
-            margin: auto;
-            padding:4px;
-            background-color: none;
-            display: block;
-            width: 120px;
-            margin-top: 15px;
-            transition: color .5s;
-        }
-        .pricing-item.mg{
-            margin: 0 5%;
-           
-        }
-        .pricing-list li{
-            color:#999;
-            line-height: 1.8;
-        }
-        .pricing-item{
-            position: relative;
-        }
-        .pricing-item:after{
-            position: absolute;
-            content: "";
-            width: 100%;
-            height: 0 ;
-            top: 0;
-            left: 0;
-            background-color: #0b0c0c;
-            transition: .5s;
-            opacity:.5;
-        }
-        .pricing-item:hover:after{
-            width: 100%;
-            height: 100%;
-
-        }
-        .pricing-item:hover .pricing-item-text{
-            color: rgb(236, 11, 11);
-        }
-        .pricing-item:hover .pricing-item-permonth{
-            color: rgb(245, 12, 12);
-            transition: 1s;
-        }
-            /* .........................testimonial section.....................................*/
-         .testimonial {
-             position: relative;
-             background-image: url(images/zzz.png);
-             background-attachment: fixed;
-             background-size: cover;
-             height: 350px;
-         }   
-         .testimonial-content{
-             overflow: hidden;
-             width: 90%;
-             margin: auto;
-         }
-         .testimonial-item {
-             float: left;
-             width: 50%;
-             color: #fff;
-             padding-right: 20px;
-             padding-top: 55px;
-             margin-bottom: 110px;
-
-
-         }
-        .testimonial-toplayer{
-            padding:90px 20px 10px 150px;
-            position:relative;
-            line-height: 1.4;
-            margin-bottom: 20px;
-       
-
-
-        }
-        .testimonial-toplayer img{
-            position: absolute;
-            top: 82px;
-            left: 65px;
-            border-radius: 50%;
-        }
-        .testimonial-desc{
-            text-transform: capitalize;
-            line-height: 1.5;
-            margin-left: 76px;
-            font-size: 14px;
-        }
-        .testimonial-toplayer span{
-            color: #6195ff;
-        }
-        /* ..............................team section.............................................. */
+/* 3.9 TEAM SECTION......................................................................................... */
         .team-content{
             overflow: hidden;
             padding-left: 70px;
@@ -518,13 +244,11 @@
             padding: 17px 13px;
             text-align: center;
             position: relative;
-
         }
         .team-img{
             width: 90%;
             margin: auto;
             position: relative;
-
         }
         .team-overlay{
             position: absolute;
@@ -590,7 +314,7 @@
             color: blue;
             transition: 1s;
         }
-        /* ......................................blog section.................................. */
+/* 3.10 BLOG SECTION........................................................................................ */
         .blog-content{
             overflow: hidden;
             background-color: #f8f8f8;
@@ -654,13 +378,13 @@
             height: 100%;
             opacity: .5;
         }
-        /* ...................................footer section..................................... */
+/* 3.11 FOOTER SECTION....................................................................................... */
         .mmg{
             width: 160px;
             height: 70px;
         }
         .footer{
-            background-color: #1c1d21;
+            background-color: #4c4d52;
             text-align: center;
             height: 300px;
             padding: 60px 0;
